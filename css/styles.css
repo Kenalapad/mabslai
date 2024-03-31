@@ -1,0 +1,67 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header section */
+.header-logo {
+    width: 25%;
+    height: 25%;
+}
+
+.social-media-logo {
+    padding: 20px 16px;
+}
+
+/* Navbar section */
+#navbar {
+    font-size: larger;
+    font: bold;
+}
+
+/* Footer-copyright section */
+/* Creaet three equal columns that floats next to each other */
+#carouselExampleAutoplaying2 {
+    width: 400px;
+    margin: 10px 100px;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: green;
+}
+
+.pagination:hover {
+
+    border: 2px solid #ddd;
+}
+
+/* Media Query */
+
+
+.flex-container {
+    margin-left: 10em;
+    margin-right: 10em;
+    display: flex;
+    align-items: stretch;
+
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
+
+/* Media Query/
+/* 2560px */
+/* 1440 */
+/* 1024 */
+/* 768 */
+/* 425 */
+/* 375 */
+/* 320 */

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="pictures/logo/mabslai.ico" type="iamge/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MABSLAI AIR BASE SAVINGS & LOAN ASSOCIATION, INC.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* // `lg` applies to medium devices (tablets, less than 992px) */
+      @media (max-width: 991.98px) { 
+        #topnavicon {
+          display: flex;
+          float: left;
+        }
+       }
+       /* Hide the col for loan section 1st col */
+      @media (max-width: 738px) {
+        #hide__loans {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Toggler -->
+    <nav class="navbar navbar-expand-lg bg-success fixed">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="pictures/mabslai/mabslai.png" alt="" style="width: 120px; height: 90px"/>
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <!-- LOANS -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"style="color: white">LOANS</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="salaryLoan.html" class="dropdown-item">Salary Loan</a>
+                </li>
+                <li>
+                  <a href="emergencyLoan.html" class="dropdown-item">Emergency Loan</a>
+                </li>
+                <li>
+                  <a href="calamityLoan.html" class="dropdown-item">Calamity Loan</a>
+                </li>
+                <li>
+                  <a href="multipurposeLoan.html" class="dropdown-item">Multi-Purpose Loan</a>
+                </li>
+                <li>
+                  <a href="pensionLoan.html" class="dropdown-item">Pension Loan</a>
+                </li>
+                <li>
+                  <a href="motorcycleLoan.html" class="dropdown-item">Motorcycle Loan</a>
+                </li>
+                <li>
+                  <a href="carLoan.html" class="dropdown-item">Car Loan</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end LOANS -->
+            <!-- Deposit -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"style="color: white">DEPOSIT</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="capiltalContributionAccount.html" class="dropdown-item">Capital Contribution Account</a>
+                </li>
+                <li>
+                  <a href="savingAccount.html" class="dropdown-item">Saving Account</a>
+                </li>
+                <li>
+                  <a href="timeDepositAccount.html" class="dropdown-item">Time Deposit Account</a>
+                </li>
+                <li>
+                  <a href="pensionAccount.html" class="dropdown-item">Pension Account</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end Deposit -->
+
+            <!-- About Us -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" style="color: white">ABOUT US</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="aboutUs.html" class="dropdown-item">Our Office</a>
+                </li>
+                <li>
+                  <a href="boardOfTrustees.html" class="dropdown-item">Board of Trustees</a>
+                </li>
+                <li>
+                  <a href="managementTeam.html" class="dropdown-item">Management Team</a>
+                </li>
+                <li>
+                  <a href="donationProgram.html" class="dropdown-item">Donation Program</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end About Us -->
+
+            <!-- Contact Us -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"aria-expanded="false" style="color: white">CONTACT US</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="contactUs.html" class="dropdown-item">Customer Assistance</a>
+                </li>
+                <li>
+                  <a href="feedback.html" class="dropdown-item">Feedback & Concers</a>
+                </li>
+                <li>
+                  <a href="faqs.html" class="dropdown-item">FAQS</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end Contact Us -->
+            <!-- Social Media Account -->
+          </ul>
+          <div class="d-flex justify-content-end" id="topnavicon">
+            <div class="row">
+              <a href="https://www.facebook.com/mabslaiofficial" class="me-4 text-reset" style="text-decoration: none;">
+                <img src="pictures/logo/facebook.svg" alt="facebook" style="width: 34px;">
+              </a>
+            </div>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+              <img src="pictures/logo/viber.svg" alt="viber" style="width: 34px;">
+            </a>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+              <img src="pictures/logo/signal-messenger.svg" alt="signal-messenger" style="width: 34px;">
+            </a>
+          </div>
+          <!-- end Social Media Account -->
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <br>
+    <br>
+    
+    <!-- Loan Section -->
+    <div class="container overflow-hidden text-left" id="container__sample">
+      <div class="row gx-5">
+        <div class="col col-5 col-md-4 col-lg-4 col-sm-9  rounded container-md" id="hide__loans">
+          <!-- sm md lg xl xxl -->
+         <div class="p-3 border rounded  h-100 ms-2 ps-5">
+          <h5 class="card-title mt-5">loans</h5>
+            <p class="card-text"><a href="capiltalContributionAccount.html" style="text-decoration: none;">Capital Contribution Account</a></p>
+            <p class="card-text"><a href="savingAccount.html" style="text-decoration: none;" class="text-bg-success">Saving Account</a></p>
+            <p class="card-text"><a href="timeDepositAccount.html" style="text-decoration: none;">Time Deposit Account</a></p>
+            <p class="card-text"><a href="pensionAccount.html" style="text-decoration: none;">Pension Account</a></p>
+        </div>
+        </div>
+        <div class="col-8 rounded container">
+          <div class="p-3 border rounded">
+            <img class="card-img-top w-50 mx-auto d-block " src="pictures/mabslai/mabslai.png" alt="">
+            <h5 class="card-title text-center mt-5">Saving Account</h5>
+            <p class="card-text"><strong>ELIGIBILITY :</strong>The loan is open to members and associate members in good standing with valid reason to support the kind of loan applied for;</p>
+            <p class="card-text"><strong>LOAN AMOUNT :</strong>Minimum of P5,000.00; Maximum of P600,000.00;</p>
+            <p class="card-text"><strong>TERM:</strong>Minimum of 7 days to maximum of 5 years;</p>
+            <h5 class="card-title">INTEREST RATE (Add On) :  
+            </h5>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-bg-success">Deduction</th>
+                  <th scope="col" class="text-bg-success">Interest Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Payslip deduction</th>
+                  <td>1.25% per month </td>
+                </tr>
+                <tr>
+                  <th scope="row">Over the counter</th>
+                  <td>1.50% per month
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h6 class="card-title"><strong>REQUIREMENTS:</strong></h6>
+            <ol>
+              <li>Filled up application form;</li>
+              <li>PROVOST non-pending case</li>
+              <li>Re-enlistment Order and Willingness to Re-enlistment (for Enlisted Personnel) </li>
+              <li>Security of Tenure (for Officers)</li>
+              <li>Wife’s/Husband’s Consent/ Singleness</li>
+              <li>Payslip – 1 month</li>
+              <li>Photocopy of Military ID</li>
+              <li>Medical Certificate (for P100,000.00 and above)</li>
+            </ol>
+            <h6><strong>PROCESSING FEE (Per Loan Application or Renewal):</strong></h6>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-bg-success">Processing Fee</th>
+                  <th scope="col" class="text-bg-success">4.00%</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Notorial Fee</th>
+                  <td>1.50%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Loan Section -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom --bs-success-bg-subtle" 
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span><strong>Get connected to our Social Media Account:</strong></span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/mabslaiofficial" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/facebook.svg" alt="facebook" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/viber.svg" alt="viber" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/instagram.svg" alt="instagram" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/signal-messenger.svg" alt="signal-messenger" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/whatsapp.svg" alt="whatsapp" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/youtube.svg" alt="youtube" style="width: 34px;">
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="bg-success text-white ">
+        <div class="container text-center text-md-start mt-10">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4 ">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4 ">
+                <p>Mabslai, Inc</p>
+              </h6>
+              <p>
+                MACTAN AIR BASE SAVINGS & LOAN ASSOCIATION, INC.
+                <br /><br />Brigadier General Benito N Ebuen Air Base 6015
+                Lapu-Lapu City
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="text-decoration: none;">Loans</h6>
+              <p>
+                <a href="capiltalContributionAccount.html" class="text-reset" style="text-decoration: none;">Salary Loan</a>
+              </p>
+              <p>
+                <a href="savingAccount.html" class="text-reset" style="text-decoration: none;">Emergency Loan</a>
+              </p>
+              <p>
+                <a href="timeDepositAccount.html" class="text-reset" style="text-decoration: none;">Calamity Loan</a>
+              </p>
+              <p>
+                <a href="pensionAccount.html" class="text-reset" style="text-decoration: none;">Multi-Purpose Loan</a>
+              </p>
+              <p>
+                <a href="pensionLoan.html" class="text-reset" style="text-decoration: none;">Pension Loan</a>
+              </p>
+              <p>
+                <a href="motorcycleLoan.html" class="text-reset" style="text-decoration: none;">Motorcycle Loan</a>
+              </p>
+              <p>
+                <a href="carLoan.html" class="text-reset" style="text-decoration: none;">Car Loan</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="text-decoration: none;">Deposit</h6>
+              <p>
+                <a href="capiltalContributionAccount.html" class="text-reset" style="text-decoration: none;">Capital Contribution Account</a>
+              </p>
+              <p>
+                <a href="savingAccount.html" class="text-reset" style="text-decoration: none;">Savings Account</a>
+              </p>
+              <p>
+                <a href="timeDepositAccount.html" class="text-reset" style="text-decoration: none;">Time Deposit Account</a>
+              </p>
+              <p>
+                <a href="pensionAccount.html" class="text-reset" style="text-decoration: none;">Pension Account</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="text-decoration: none;">About Us</h6>
+              <p>
+                <a href="aboutUs.html" class="text-reset" style="text-decoration: none;">Our Office</a>
+              </p>
+              <p>
+                <a href="boardOfTrustees.html" class="text-reset" style="text-decoration: none;">Board of Trustees</a>
+              </p>
+              <p>
+                <a href="managementTeam.html" class="text-reset" style="text-decoration: none;">Management Team</a>
+              </p>
+              <p>
+                <a href="donationProgram.html" class="text-reset" style="text-decoration: none;">Donation Progam</a>
+              </p>
+            </div>
+            <!-- end Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                <i class="fa fa-address-book-o me-3"></i>
+                mabslaiofficial@gmail.com
+              </p>
+              <p><i class="fa fa-mobile-phone me-3" style="font-size:24px"></i> 0916 519 1592</p>
+              <p><i class="fa fa-phone me-3" ></i> 340 3052</p>
+            </div>
+            <!-- end Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+        Copyright © 2024 MACTAN AIR BASE SAVINGS & LOAN ASSOCIATION, INC.All
+        Rights Reserved
+        <a class="text-reset fw-bold" href="#">Mabslai.com.ph</a>
+      </div>
+      <!-- end Copyright -->
+    </footer>
+    <!-- end Footer -->
+
+    <!-- javaScript section -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

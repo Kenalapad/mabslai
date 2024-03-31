@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="pictures/logo/mabslai.ico" type="iamge/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MABSLAI AIR BASE SAVINGS & LOAN ASSOCIATION, INC.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* // `lg` applies to medium devices (tablets, less than 992px) */
+      @media (max-width: 991.98px) { 
+        #topnavicon {
+          display: flex;
+          float: left;
+        }
+        .card-title {
+          color: green;
+          font-weight: bolder;
+        }
+       }
+       /* // end `lg` applies to medium devices (tablets, less than 992px) */
+  
+       /* Became A Member Display */
+       @media (max-width: 727px) {
+        #becameAMember {
+          display: flex;
+          flex-direction: column;
+        }
+        #bam  {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #bamContent {
+          margin-left: 3em;
+        }
+        /* end Became A Member Display */ 
+
+        /* Salary Loan Display */
+        @media (max-width: 727px) {
+          #salaryLoan {
+            display: flex;
+            flex-wrap: wrap-reverse;
+          }
+          #sl-content {
+            margin-left: 3em;
+          }
+        }
+        /* end Salary Loan */
+
+        /* CapitalContribution */
+        @media (max-width: 727px) {
+          #CapitalContribution {
+            display: flex;
+            flex-direction: column;
+          }
+          #ccImage {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          #ccContent {
+            margin-left: 3em;
+          }
+        }
+        /* end CapitalContribution */
+
+        /* pensionLoan */
+        @media (max-width: 727px) {
+          #pensionLoan {
+            display: flex;
+            flex-wrap: wrap-reverse;
+          }
+          #plContent {
+            margin-left: 3em;
+          }
+        }
+        /* end pensionLoan */
+       }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Toggler -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="pictures/mabslai/mabslai.png" alt="becameAMember" style="width: 120px; height: 90px"/>
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-success active" aria-current="page" href="index.html"><strong>HOME</strong></a>
+            </li>
+            <!-- LOANS -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" style="color: green;"><strong>LOANS</strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="salaryLoan.html" class="dropdown-item" >Salary Loan</a>
+                </li>
+                <li>
+                  <a href="multipurposeLoan.html" class="dropdown-item">Multi-Purpose Loan</a>
+                </li>
+                <li>
+                  <a href="pensionLoan.html" class="dropdown-item">Pension Loan</a>
+                </li>
+                <li>
+                  <a href="applianceLoan.html" class="dropdown-item">Appliance Loan</a>
+                </li> 
+                <li>
+                  <a href="motorcycleLoan.html" class="dropdown-item">Motorcycle Loan</a>
+                </li>
+                <li>
+                  <a href="carLoan.html" class="dropdown-item">Car Loan</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end LOANS -->
+            <!-- Deposit -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"style="color: green"><strong>DEPOSIT</strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="capiltalContributionAccount.html" class="dropdown-item">Capital Contribution/ Savings Account</a>
+                </li>
+                <li>
+                  <a href="timeDepositAccount.html" class="dropdown-item">Time Deposit Account</a>
+                </li>
+                <li>
+                  <a href="pensionAccount.html" class="dropdown-item">Pension Account</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end Deposit -->
+
+            <!-- About Us -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" style="color: green"><strong>ABOUT US</strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="aboutUs.html" class="dropdown-item">Mabslai Office</a>
+                </li>
+                <li>
+                  <a href="boardOfTrustees.html" class="dropdown-item">Board of Trustees</a>
+                </li>
+                <li>
+                  <a href="managementTeam.html" class="dropdown-item">Management Team</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end About Us -->
+
+            <!-- Contact Us -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"aria-expanded="false" style="color: green"><strong>CONTACT US</strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="contactUs.html" class="dropdown-item">Customer Assistance</a>
+                </li>
+                <li>
+                  <a href="feedback.html" class="dropdown-item">Feedback & Concers</a>
+                </li>
+                <li>
+                  <a href="faqs.html" class="dropdown-item">FAQS</a>
+                </li>
+              </ul>
+            </li>
+            <!-- end Contact Us -->
+
+            <!-- Social Media Account -->
+          </ul>
+          <div class="d-flex justify-content-end" id="topnavicon">
+            <div class="row">
+              <a href="https://www.facebook.com/mabslaiofficial" class="me-4 text-reset" style="text-decoration: none;">
+                <img src="pictures/logo/facebook.svg" alt="facebook" style="width: 34px;">
+              </a>
+            </div>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+              <img src="pictures/logo/viber.svg" alt="viber" style="width: 34px;">
+            </a>
+            <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+              <img src="pictures/logo/signal-messenger.svg" alt="signal-messenger" style="width: 34px;">
+            </a>
+          </div>
+          <!-- end Social Media Account -->
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Carousel section -->
+    <div id="Mabslai__Carousel__Banner" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item  active">
+          <img src="pictures/banner/viber.jpg" class="d-block w-100 h-100" alt="viber">
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/banner/facebook3.jpg" class="d-block w-100 h-100" alt="facebook">
+        </div> 
+        <div class="carousel-item">
+          <img src="pictures/banner/signalmessenger.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/banner/motorcycle-loan.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/banner/capitalContribution.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pictures/banner/mabslai-intagram.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end Carousel section -->
+    
+    <!-- Latest news -->
+    <div class="col-md-12 p-4 bordered">
+      <h3 class="text-center border rounded shadow-lg">Latest Mabslai News</h3>
+    </div>
+    <!-- end Latest news -->
+
+
+
+    <!-- Became a Member -->
+    <div  class="rounded-5  mb-1 mt-1 ms-1 me-1 bg-light">
+      <div  id="becameAMember" class="d-flex justify-content-evenly border shadow  rounded mb-1 mt-1 ">  <!-- pagination -->
+         <div class="card mb-5 mt-1" style="width: 25rem;" id="bam">
+             <img src="pictures/content/BecameAMabslaiMembers.jpg" class="card-img-top" alt="capitalContribution">
+         </div>
+         <div class=" w-20 h-55 mb-5 mt-1">
+             <div class="card-body me-5" id="bamContent">
+                 <h5 class="card-title fs-5">Became a Mabslai Member</h5>
+                 <p class="card-text fs-4">Be one of the member of Mabslai to avail our Loan, Deposit and etc...<br><i>Come and Visit Mabslai for more...</i></p>
+                 <a href="becameMember.html" class="btn btn-success fs-6">Read More</a>
+             </div>
+         </div>
+       </div>
+   </div>
+   <!-- end Became a Member -->
+   <br>
+   <br>
+   <!-- Salary Loan -->
+   <div  class="rounded-5 mb-1 mt-1 ms-1 me-1">
+     <div id="salaryLoan" class="d-flex justify-content-evenly border shadow  mb-1 mt-1 ">  <!-- pagination -->   
+        <div class=" w-20 h-55 mb-5 mt-1">
+            <div class="card-body me-5" id="sl-content">
+                <h5 class="card-title fs-5">Salary Loan</h5>
+                <p class="card-text fs-4">We guarantee  flexible term, Fast disburtment of funds, and fixed interest rates. <br><i>Come and Visit Mabslai for more...</i></p>
+                <a href="salaryLoan.html" class="btn btn-success fs-6">Read More</a>
+            </div>
+        </div>
+        <div class="card mb-5 mt-1" style="width: 25rem;">
+         <img src="pictures/content/SalaryLoan.jpg" class="card-img-top" alt="capitalContribution">
+      </div>
+   </div>
+   <!-- end Salary Loan -->
+   <br>
+   <br>
+
+    <!--  Capital Contribution -->
+    <div  class="rounded-5  mb-1 mt-1 ms-1 me-1 bg-light">
+       <div id="CapitalContribution" class="d-flex justify-content-evenly border shadow  rounded mb-1 mt-1 ">  <!-- pagination -->
+          <div id="ccImage" class="card mb-5 mt-1" style="width: 25rem;">
+              <img src="pictures/content/capitalContribution.jpg" class="card-img-top" alt="capitalContribution">
+          </div>
+          <div class=" w-20 h-55 mb-5 mt-1">
+              <div id="ccContent" class="card-body me-5">
+                  <h5 class="card-title fs-5">Capital Contribution/ Savings Account</h5>
+                  <p class="card-text fs-4">Invest your money to our Capital Contribution that offers 10% annually!<br><i>Come and Visit Mabslai for more...</i></p>
+                  <a href="capiltalContributionAccount.html" class="btn btn-success fs-6">Read More</a>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- end  Capital Contribution -->
+    <br>
+    <br>
+    <!-- Pension Loan -->
+    <div  class="rounded-5 mb-1 mt-1 ms-1 me-1">
+      <div id="pensionLoan" class="d-flex justify-content-evenly border shadow  mb-1 mt-1 ">  <!-- pagination -->   
+         <div id="plContent" class=" w-20 h-55 mb-5 mt-1">
+             <div class="card-body me-5">
+                 <h5 class="card-title fs-5">Pension Loan</h5>
+                 <p class="card-text fs-4">Mabslai offers loan to all Philippine Air Force Pensioner. <br><i>Come and Visit Mabslai for more...</i></p>
+                 <a href="pensionLoan.html" class="btn btn-success fs-6">Read More</a>
+             </div>
+         </div>
+         <div class="card mb-5 mt-1" style="width: 25rem;">
+          <img src="pictures/pafcpicsample/E2TFLt0eOVtTHmMApKZ4uEUKQGdbbzEVqZV5zkps.jpg" class="card-img-top" alt="capitalContribution">
+      </div>
+       </div>
+    </div>
+    <!-- end Pension Loan -->
+    <br>
+    <br>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom --bs-success-bg-subtle">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block mt-2">
+          <span><strong>Get connected to our Social Media Account:</strong></span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/mabslaiofficial" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/facebook.svg" alt="facebook" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/viber.svg" alt="viber" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/instagram.svg" alt="instagram" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/signal-messenger.svg" alt="signal-messenger" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/whatsapp.svg" alt="whatsapp" style="width: 34px;">
+          </a>
+          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+            <img src="pictures/logo/youtube.svg" alt="youtube" style="width: 34px;">
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="bg-success text-white ">
+        <div class="container text-center text-md-start mt-10">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4 ">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="pictures/mabslai/mabslai.png" alt="" style="width: 34px;"><strong style="padding-left: 20px;">Mabslai, Inc</strong></img>
+              </h6>
+              <p>
+                MACTAN AIR BASE SAVINGS & LOAN ASSOCIATION, INC.
+                <br /><br />Brigadier General Benito N Ebuen Air Base 6015
+                Lapu-Lapu City
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="text-decoration: none;"><strong>Loans</strong></h6>
+              <p>
+                <a href="salaryLoan.html" class="text-reset" style="text-decoration: none;">Salary Loan</a>
+              </p>
+              <p>
+                <a href="multipurposeLoan.html" class="text-reset" style="text-decoration: none;">Multi-Purpose Loan</a>
+              </p>
+              <p>
+                <a href="pensionLoan.html" class="text-reset" style="text-decoration: none;">Pension Loan</a>
+              </p>
+              <p>
+                <a href="applianceLoan.html" class="text-reset" style="text-decoration: none;">Appliance Loan</a>
+              </p>
+              <p>
+                <a href="motorcycleLoan.html" class="text-reset" style="text-decoration: none;">Motorcycle Loan</a>
+              </p>
+              <p>
+                <a href="carLoan.html" class="text-reset" style="list-style: none; text-decoration: none;">Car Loan</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="text-decoration: none;"><strong>Deposit</strong></h6>
+              <p>
+                <a href="capiltalContributionAccount.html" class="text-reset" style="text-decoration: none;">Capital Contribution/ Savings Account</a>
+              </p>
+              <p>
+                <a href="timeDepositAccount.html" class="text-reset" style="text-decoration: none;">Time Deposit Account</a>
+              </p>
+              <p>
+                <a href="pensionAccount.html" class="text-reset" style="text-decoration: none;">Pension Account</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4" style="text-decoration: none;"><strong>About Us</strong></h6>
+              <p>
+                <a href="aboutUs.html" class="text-reset" style="text-decoration: none;">Mabslai Office</a>
+              </p>
+              <p>
+                <a href="boardOfTrustees.html" class="text-reset" style="text-decoration: none;">Board of Trustees</a>
+              </p>
+              <p>
+                <a href="managementTeam.html" class="text-reset" style="text-decoration: none;">Management Team</a>
+              </p>
+            </div>
+            <!-- end Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4"><strong>Contact Us</strong></h6>
+              <img src="pictures/logo/gmail.png" alt="gmail" style="width: 34px;"> 
+                mabslaiofficial@gmail.com
+              </p>
+              <p><img src="pictures/logo/phone.png" alt="phone" style="width: 34px;"></i> 0916 519 1592</p>
+              <p> <img src="pictures/logo/dialphone.png" alt="dialPhone" style="width: 34px;"> 340 3052</p>
+            </div>
+            <!-- end Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <!-- Copyright -->
+      <div
+        class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+        Copyright © 2024 MACTAN AIR BASE SAVINGS & LOAN ASSOCIATION, INC.&nbsp;All Rights Reserved
+        <a class="text-success fw-bold" href="#">Mabslai.com.ph</a>
+      </div>
+      <!-- end Copyright -->
+    </footer>
+    <!-- end Footer -->
+
+    <!-- javaScript section -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
