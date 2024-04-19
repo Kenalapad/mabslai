@@ -21,23 +21,25 @@
         }
        }
        /* // end `lg` applies to medium devices (tablets, less than 992px) */
-  
+       
+       /* Applies to 727px design */
        /* Became A Member Display */
        @media (max-width: 727px) {
-        #becameAMember {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        #bam  {
-          margin-left: auto;
-          margin-right: auto;
-        }
-        #bamContent {
-          margin-left: 3em;
+          #becameAMember {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          #bam  {
+            margin-left: auto;
+            margin-right: auto;
+          }
+          #bamContent {
+            margin-left: 3em;
+          }
         }
         /* end Became A Member Display */ 
 
-        /* Salary Loan Display */
+        /* Salary Loan Display */ 
         @media (max-width: 727px) {
           #salaryLoan {
             display: flex;
@@ -47,7 +49,8 @@
             margin-left: 3em;
           }
         }
-        /* end Salary Loan */
+        /*  end Salary Loan */ 
+
 
         /* CapitalContribution */
         @media (max-width: 727px) {
@@ -56,6 +59,7 @@
             flex-wrap: wrap;
           }
           #ccImage {
+            width: 13px;
             margin-left: auto;
             margin-right: auto;
           }
@@ -76,7 +80,12 @@
           }
         }
         /* end pensionLoan */
-       }
+
+        /*  */
+        @media (max-width: 467px) {
+          
+        }
+        /*  */
     </style>
   </head>
   <body>
@@ -161,10 +170,7 @@
                   <a href="contactUs.html" class="dropdown-item">Customer Assistance</a>
                 </li>
                 <li>
-                  <a href="feedback.html" class="dropdown-item">Feedback & Concers</a>
-                </li>
-                <li>
-                  <a href="faqs.html" class="dropdown-item">FAQS</a>
+                  <a href="feedback.html" class="dropdown-item">Feedback & Concerns</a>
                 </li>
               </ul>
             </li>
@@ -178,12 +184,6 @@
                 <img src="pictures/logo/facebook.svg" alt="facebook" style="width: 34px;">
               </a>
             </div>
-            <a href="#" class="me-4 text-reset" style="text-decoration: none;">
-              <img src="pictures/logo/viber.svg" alt="viber" style="width: 34px;">
-            </a>
-            <a href="#" class="me-4 text-reset" style="text-decoration: none;">
-              <img src="pictures/logo/signal-messenger.svg" alt="signal-messenger" style="width: 34px;">
-            </a>
           </div>
           <!-- end Social Media Account -->
         </div>
@@ -213,16 +213,16 @@
           <img src="pictures/banner/facebook3.jpg" class="d-block w-100 h-100" alt="facebook">
         </div> 
         <div class="carousel-item">
-          <img src="pictures/banner/signalmessenger.jpg" class="d-block w-100 h-100" alt="...">
+          <img src="pictures/banner/signalmessenger.jpg" class="d-block w-100 h-100" alt="signalMessenger">
         </div>
         <div class="carousel-item">
-          <img src="pictures/banner/motorcycle-loan.jpg" class="d-block w-100 h-100" alt="...">
+          <img src="pictures/banner/motorcycle-loan.jpg" class="d-block w-100 h-100" alt="motorcycleLoan">
         </div>
         <div class="carousel-item">
-          <img src="pictures/banner/capitalContribution.jpg" class="d-block w-100 h-100" alt="...">
+          <img src="pictures/banner/capitalContribution.jpg" class="d-block w-100 h-100" alt="capitalContribution">
         </div>
         <div class="carousel-item">
-          <img src="pictures/banner/mabslai-intagram.jpg" class="d-block w-100 h-100" alt="...">
+          <img src="pictures/banner/mabslai-intagram.jpg" class="d-block w-100 h-100" alt="mabslaiInstagram">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#Mabslai__Carousel__Banner" data-bs-slide="prev">
@@ -242,9 +242,23 @@
     </div>
     <!-- end Latest news -->
 
-
-
-    <!-- Became a Member -->
+    <!-- Salary Loan -->
+   <div  class="rounded-5 mb-1 mt-1 ms-1 me-1">
+      <div id="salaryLoan" class="d-flex justify-content-evenly border shadow  mb-1 mt-1 ">  <!-- pagination -->   
+        <div class=" w-20 h-55 mb-5 mt-1">
+           <div class="card-body me-5" id="sl-content">
+               <h5 class="card-title fs-5">Salary Loan</h5>
+               <p class="card-text fs-4">We guarantee  flexible term, Fast disburtment of funds, and fixed interest rates. <br><i>Come and Visit Mabslai for more...</i></p>
+               <a href="salaryLoan.html" class="btn btn-success fs-6">Read More</a>
+           </div>
+       </div>
+       <div class="card mb-5 mt-1" style="width: 25rem;">
+        <img src="pictures/content/SalaryLoan.jpg" class="card-img-top" alt="capitalContribution">
+      </div>
+    </div>
+    <!-- end Salary Loan -->
+ 
+    <!-- Became a Member --> 
     <div  class="rounded-5  mb-1 mt-1 ms-1 me-1 bg-light">
       <div  id="becameAMember" class="d-flex justify-content-evenly border shadow  rounded mb-1 mt-1 ">  <!-- pagination -->
          <div class="card mb-5 mt-1" style="width: 25rem;" id="bam">
@@ -332,14 +346,8 @@
           <a href="https://www.facebook.com/mabslaiofficial" class="me-4 text-reset" style="text-decoration: none;">
             <img src="pictures/logo/facebook.svg" alt="facebook" style="width: 34px;">
           </a>
-          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
-            <img src="pictures/logo/viber.svg" alt="viber" style="width: 34px;">
-          </a>
-          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
+          <a href="https://www.instagram.com/mabslai/" class="me-4 text-reset" style="text-decoration: none;">
             <img src="pictures/logo/instagram.svg" alt="instagram" style="width: 34px;">
-          </a>
-          <a href="#" class="me-4 text-reset" style="text-decoration: none;">
-            <img src="pictures/logo/signal-messenger.svg" alt="signal-messenger" style="width: 34px;">
           </a>
           <a href="#" class="me-4 text-reset" style="text-decoration: none;">
             <img src="pictures/logo/whatsapp.svg" alt="whatsapp" style="width: 34px;">
