@@ -1,0 +1,146 @@
+/* Small devices (landscape phones, ≥576px) */
+@media (max-width: 576px) and (min-width: 576px) {
+  /* Carousel */
+  .carousel-item {
+    height: 300px;
+  }
+  /* End Carousel */
+  /* Became A Member */
+  #becameAMember {
+    display: flex;
+    flex-direction: column;
+  }
+  #bam {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #becameAMemberContent {
+    margin-left: 3em;
+  }
+  /* End Became A Member */
+  /* Salary Loan */
+  #salaryLoan {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  #sl-content {
+    margin-left: 3em;
+  }
+  /* End Salary Loan */
+  /* Capital Contribution  */
+  #CapitalContribution {
+    display: flex;
+    flex-direction: column;
+  }
+  #ccImage {
+    width: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #ccContent {
+    margin-left: 3em;
+  }
+  /* End Capital Contribution */
+  /* Pension Loan */
+  #pensionLoan {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  #plContent {
+    margin-left: 3em;
+  }
+  /* End Pension Loan */
+  /* Loan Calculator */
+  .loanCalculator {
+    width: 200px !important;
+    height: 100px !important;
+  }
+  /* End Loan Calculator */
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 768px) {
+  /* Carousel */
+  .carousel-item {
+    height: 450px;
+  }
+  /* End Carousel */
+  /* Became A Member */
+  #becameAMember {
+    display: flex;
+    flex-direction: column;
+  }
+  #bam {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #becameAMemberContent {
+    margin-left: 3em;
+  }
+  /* End Became A Member */
+  /* Salary Loan */
+  #salaryLoan {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  #sl-content {
+    margin-left: 3em;
+  }
+  /* End Salary Loan */
+  /* Capital Contribution  */
+  #CapitalContribution {
+    display: flex;
+    flex-direction: column;
+  }
+  #ccImage {
+    width: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #ccContent {
+    margin-left: 3em;
+  }
+  /* End Capital Contribution */
+  /* Pension Loan */
+  #pensionLoan {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  #plContent {
+    margin-left: 3em;
+  }
+  /* End Pension Loan */
+  /* Loan Calculator */
+  .loanCalculator {
+    width: 300px;
+    height: 200px;
+  }
+  /* End Loan Calculator */
+  /* Footer */
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+  /* End Footer */
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+  .loanCalculator {
+    width: 300px;
+    height: 200px;
+  }
+  #footer {
+    display: flex;
+    flex-wrap: inherit;
+    width: 100%;
+  }
+}
+
+/* X-Large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) {
+  .loanCalculator {
+    width: 400px;
+    height: 200px;
+  }
+}
