@@ -11,6 +11,7 @@ import capitalContribution from "../images/carousel/capitalContribution.jpg";
 import instagram from "../images/carousel/intagram.jpg";
 import BecameAMabslaiMember from "../images/content/BecameAMabslaiMembers.jpg";
 import Loan from "../images/content/Loan.png";
+import pensionLoan from "../images/content/pensionLoan.png";
 
 function Home() {
   // Carousel
@@ -597,11 +598,7 @@ function Home() {
             </div>
           </div>
           <div className="card mb-5 mt-5" style={{ width: "25rem" }}>
-            <img
-              src="/src/images/content/pensionLoan.png"
-              className="card-img-top"
-              alt="capitalContribution"
-            />
+            <img src={pensionLoan} className="card-img-top" alt="pensionLoan" />
           </div>
         </div>
       </div>
