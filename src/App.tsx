@@ -10,6 +10,9 @@ import CapitalContribution from "./pages/CapitalContribution";
 import OurLocation from "./pages/OurLocation";
 import ContactMabslai from "./pages/ContactMabslai";
 import ManagementTeam from "./pages/ManagementTeam";
+import LoanCalculator from "./pages/LoanCalculator";
+import BecameAMember from "./pages/BecameAMember";
+import Loan from "./pages/Loan";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
           <Route path="ContactMabslai" element={<ContactMabslai />} />
           <Route path="/BoardOfTrustees" element={<BoardOfTrustees />} />
           <Route path="ManagementTeam" element={<ManagementTeam />} />
+          <Route path="LoanCalculator" element={<LoanCalculator />} />
+          <Route path="BecameAMember" element={<BecameAMember />} />
+          <Route path="Loan" element={<Loan />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

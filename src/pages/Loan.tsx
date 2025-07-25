@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function PensionLoan() {
+function Loan() {
   // NavBar
   type DropdownName = "loans" | "deposit" | "contactus" | "aboutus" | null;
 
@@ -352,7 +352,93 @@ function PensionLoan() {
           {/* SOCIAL MEDIA */}
         </div>
       </nav>
-      {/* End NAVBAR SECTION */}
+      {/* END NAVBAR SECTION */}
+      {/* SalaryLoan */}
+      <div
+        className="container overflow-hidden text-left mt-5 pt-5"
+        id="container_sample"
+      >
+        <div className="row gx-5">
+          <div
+            className="col col-5 col-md-4 col-lg-4 col-sm-9 rounded container-md"
+            id="hide_loans"
+          >
+            <div className="p-3 border rounded h-100 ms-2 ps-5">
+              <h5 className="card-title">
+                <strong>LOANS</strong>
+                <br />
+                <p className="card-text pt-3  ">
+                  <a
+                    href="salaryLoan.html"
+                    style={{ textDecoration: "none", color: "green" }}
+                  >
+                    <strong>Salary Loan</strong>
+                  </a>
+                </p>
+                <p className="card-text">
+                  <a
+                    href="pensionLoan.html"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Pension Loan
+                  </a>
+                </p>
+              </h5>
+            </div>
+          </div>
+          <div className="col-8 rounded container">
+            <div className="p-3 border rounded ">
+              <img
+                className="card-img-top w-50 mx-auto d-block"
+                src="/src/images/content/Loan.png"
+                alt=""
+              />
+              <h5 className="card-title text-center mt-5">
+                <strong>Salary Loan</strong>
+              </h5>
+              <br />
+              <p className="card-text">
+                <strong>ELIGIBILITY :</strong>The loan is open to members and
+                associate members in good standing with valid reason to support
+                the kind of loan applied for;
+              </p>
+              <p className="card-text">
+                <strong>LOAN AMOUNT :</strong>Minimum of <strong>₱5,000</strong>
+                ; Maximum of <strong>₱1,000,000</strong>; Terms and Conditions
+                may apply
+              </p>
+              <p className="card-text">
+                <strong>TERMS:</strong>Minimum of One (1) Year Minimum up to
+                Five (5) years maximum;
+              </p>
+              <p className="card-text">
+                <strong>DEDUCTION/PAYMENT:</strong>Payslip Deduction,
+                Over-the-Counter Payment, Bank Transfer/ Fund Transfer
+              </p>
+              <h5 className="card-title">INTEREST RATE:</h5>
+              <table className="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" className="text-bg-success">
+                      Deduction
+                    </th>
+                    <th scope="col" className="text-bg-success">
+                      Interest Rate
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Payslip deduction</th>
+                    <td>1.25% per month </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End SalaryLoan */}
       {/* Footer */}
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
         <section className="d-flex justify-content-center justify-content-lg-between p-2 border-bottom --bs-success-bg-subtle">
@@ -411,7 +497,7 @@ function PensionLoan() {
         <section className="bg-success text-white">
           <div className="container text-center text-md-start mt-10">
             <div className="row" id="footer">
-              {/* Mabslai */}
+              {/* MABSLAI */}
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <img
@@ -433,8 +519,8 @@ function PensionLoan() {
                   </p>
                 </h6>
               </div>
-              {/* End Mabslai */}
-              {/* Loan */}
+              {/* End MABSLAI */}
+              {/* LOANS */}
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
                 <h6
                   className="text-uppercase fw-bold mb-4"
@@ -461,7 +547,7 @@ function PensionLoan() {
                   </a>
                 </p>
               </div>
-              {/* End Loan */}
+              {/* End LOANS */}
               {/* Deposit */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
                 <h6
@@ -481,7 +567,7 @@ function PensionLoan() {
                 </p>
               </div>
               {/* End Deposit */}
-              {/* AboutUs */}
+              {/* About Us */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
                 <h6
                   className="text-uppercase fw-bold mb-4"
@@ -504,8 +590,9 @@ function PensionLoan() {
                   </a>
                 </p>
               </div>
-              {/* End AboutUS */}
-              {/* Contact */}
+              {/* End About US */}
+
+              {/* CONTACTS */}
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <strong>CONTACT US</strong>
@@ -535,13 +622,13 @@ function PensionLoan() {
                   &nbsp; 340 3052
                 </p>
               </div>
-              {/* End Contact */}
+              {/* End CONTACTS */}
             </div>
           </div>
         </section>
       </footer>
-      {/* End Footer */}
-      {/* Copyright */}
+      {/* END FOOTER */}
+      {/* COPYRIGHT */}
       <div
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
@@ -552,7 +639,7 @@ function PensionLoan() {
           Mabslai.com.ph
         </a>
       </div>
-      {/* End Copyright */}
+      {/* END COPYRIGHT */}
       {/* ScrollToTopButton */}
       <button
         id="myBtn"
@@ -574,9 +661,9 @@ function PensionLoan() {
       >
         ↑ Top
       </button>
-      {/* End ScrollToTopButton */}
+      {/* ScrollToTopButton */}
     </>
   );
 }
 
-export default PensionLoan;
+export default Loan;

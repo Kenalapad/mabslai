@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function PensionLoan() {
+function BecameAMember() {
   // NavBar
   type DropdownName = "loans" | "deposit" | "contactus" | "aboutus" | null;
 
@@ -353,6 +353,51 @@ function PensionLoan() {
         </div>
       </nav>
       {/* End NAVBAR SECTION */}
+      {/* BecameAMember */}
+      <div
+        className="container overflow-hidden text-left"
+        id="container_sample"
+        style={{ marginTop: "10em", marginBottom: "5em" }}
+      >
+        <div className="col-8 rounded container">
+          <div className="p-3 border rounded">
+            <img
+              className="card-img-top w-100 mx-auto d-block"
+              src="src/images/content/BecameAMabslaiMembers.jpg"
+              alt="BecameAMember"
+            />
+            <h5 className="card-title text-center mt-5">
+              <strong>MEMBERSHIP</strong>
+            </h5>
+            <p className="card-text">
+              <strong>ELIGIBILITY :</strong>An active Officer, Enlisted
+              Personnel and Civilian Human Resource of the Philippine Air Force
+              who are under the paying jurisdiction of the PAF Finance Center.
+            </p>
+            <h6 className="card-title">
+              <strong>PROCESS:</strong>
+            </h6>
+            <ol>
+              <li>Fill out the membership form.</li>
+              <li>Must have One (1) 2x2 and 1x1 ID picture.</li>
+              <li>Photocopy of Military I.D.</li>
+              <li>
+                Payslip for automatic monthly deduction or may pay over the
+                counter
+              </li>
+              <li>Initial deposit of 1,000 for maintaining balance.</li>
+              <li>Issuance of Passbook</li>
+            </ol>
+            <p>
+              <strong>
+                As Regular Member of MABSLAI you can now avail low interest rate
+                for your Salary Loan
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      {/*  */}
       {/* Footer */}
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
         <section className="d-flex justify-content-center justify-content-lg-between p-2 border-bottom --bs-success-bg-subtle">
@@ -579,4 +624,4 @@ function PensionLoan() {
   );
 }
 
-export default PensionLoan;
+export default BecameAMember;

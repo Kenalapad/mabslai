@@ -1,7 +1,21 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function PensionLoan() {
+function LoanCalculator() {
+  // Loan Calculator
+  const [loanAmount, setLoanAmount] = useState<number | undefined>();
+  const [months, setMonths] = useState<number | undefined>();
+  const [monthlyPayment, setMonthlyPayment] = useState<number>(0);
+
+  const calculateLoan = () => {
+    if (!loanAmount || !months || months === 0) {
+      alert("Please enter valid loan amount and months.");
+      return;
+    }
+    const payment = loanAmount / months;
+    setMonthlyPayment(Number(payment.toFixed(2)));
+  };
+
   // NavBar
   type DropdownName = "loans" | "deposit" | "contactus" | "aboutus" | null;
 
@@ -81,6 +95,7 @@ function PensionLoan() {
     e.preventDefault();
     navigate("/ManagementTeam");
   };
+
   return (
     <>
       {/* NAVBAR SECTION */}
@@ -353,6 +368,78 @@ function PensionLoan() {
         </div>
       </nav>
       {/* End NAVBAR SECTION */}
+      {/* LoanCalculator */}
+      <div
+        className="d-flex justify-content-evenly calculator"
+        style={{ paddingTop: "120px", paddingBottom: "50px" }}
+      >
+        <div
+          id="calculatorIN"
+          className="container border border-success"
+          style={{
+            maxWidth: "300px",
+            marginLeft: "25em",
+            padding: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "10px",
+            boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <h2>Loan Calculator</h2>
+
+          <label htmlFor="loanAmount">Loan Amount (₱):</label>
+          <input
+            className="border border-success"
+            type="number"
+            id="loanAmount"
+            placeholder="Enter loan amount"
+            style={{ width: "100%", padding: "10px", margin: "10px 0" }}
+            value={loanAmount ?? ""}
+            onChange={(e) => setLoanAmount(Number(e.target.value))}
+          />
+
+          <label htmlFor="months">Loan Term:</label>
+          <input
+            className="border border-success"
+            type="number"
+            id="months"
+            placeholder="Enter number of months"
+            style={{ width: "100%", padding: "10px", margin: "10px 0" }}
+            value={months ?? ""}
+            onChange={(e) => setMonths(Number(e.target.value))}
+          />
+
+          <button
+            className="btn btn-success"
+            onClick={calculateLoan}
+            style={{ width: "100%", padding: "10px", margin: "10px 0" }}
+          >
+            COMPUTE
+          </button>
+
+          <h5 style={{ textAlign: "center" }}>Monthly Amortization</h5>
+          <p style={{ textAlign: "center" }}>
+            Monthly Payment: ₱<span>{monthlyPayment.toFixed(2)}</span>
+          </p>
+        </div>
+
+        <div style={{ marginRight: "25em" }} id="calculatorINS">
+          <strong>INSTRUCTIONS:</strong>
+          <p style={{ padding: "14px 16px" }}>
+            Calculate your monthly amortization:
+          </p>
+          <ol>
+            <li>Enter the desired loan Amount.</li>
+            <li>Enter the number of months for your loan.</li>
+            <li>Click "COMPUTE" to know your amortization.</li>
+          </ol>
+          <p>
+            Please note that the computation above is indicative. <br />
+            Come and visit the MABSLAI Branch nearest you.
+          </p>
+        </div>
+      </div>
+      {/* End LoanCalculator */}
       {/* Footer */}
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
         <section className="d-flex justify-content-center justify-content-lg-between p-2 border-bottom --bs-success-bg-subtle">
@@ -579,4 +666,4 @@ function PensionLoan() {
   );
 }
 
-export default PensionLoan;
+export default LoanCalculator;

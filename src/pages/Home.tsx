@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
+  // Carousel
   type DropdownName = "loans" | "deposit" | "contactus" | "aboutus" | null;
 
   const [activeDropdown, setActiveDropdown] = useState<DropdownName>(null);
@@ -15,8 +16,30 @@ function Home() {
     setActiveDropdown(null);
   };
 
-  // Navigate
+  // ScrollToTopButton
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const scrolled = window.scrollY;
+    setIsVisible(scrolled > 20);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Navigate through Pages
   const navigate = useNavigate();
+
+  // HOME
+  const Home = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    navigate("/Home");
+  };
 
   // SALARY LOAN
   const SalaryLoan = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -60,6 +83,12 @@ function Home() {
     navigate("/ManagementTeam");
   };
 
+  // Loan
+  const Loan = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    navigate("/Loan");
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -72,13 +101,22 @@ function Home() {
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               {/* HOME */}
-              <li
-                className="nav-item"
-                style={{ marginTop: "8px", marginLeft: "10px", color: "green" }}
-              >
-                <strong>HOME</strong>
+              <li style={{ paddingTop: "8px", marginLeft: "10px" }}>
+                <a
+                  className="nav-item"
+                  onClick={Home}
+                  style={{
+                    marginTop: "50px",
+                    marginLeft: "10px",
+                    color: "green",
+                    textDecoration: "None",
+                  }}
+                >
+                  <strong>HOME</strong>
+                </a>
               </li>
-              {/* HOME */}
+
+              {/* END HOME */}
               {/* LOANS */}
               <li
                 className={`nav-item dropdown ${
@@ -95,7 +133,6 @@ function Home() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   style={{ color: "green" }}
-                  onClick={SalaryLoan}
                 >
                   <strong>LOANS</strong>
                 </a>
@@ -105,18 +142,42 @@ function Home() {
                   }`}
                 >
                   <li>
-                    <a className="dropdown-item" onClick={SalaryLoan}>
+                    <a
+                      className="dropdown-item"
+                      onClick={SalaryLoan}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
                       Salary Loan
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" onClick={PensionLoan}>
+                    <a
+                      className="dropdown-item"
+                      onClick={PensionLoan}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
                       Pension Loan
                     </a>
                   </li>
                 </ul>
               </li>
-              {/* LOANS */}
+              {/* END LOANS */}
               {/* DEPOSIT */}
               <li
                 className={`nav-item dropdown ${
@@ -142,50 +203,25 @@ function Home() {
                   }`}
                 >
                   <li>
-                    <a className="dropdown-item" onClick={CapitalContribution}>
+                    <a
+                      className="dropdown-item"
+                      onClick={CapitalContribution}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
                       Capital Contribution / Savings Account
                     </a>
                   </li>
                 </ul>
               </li>
-              {/* DEPOSIT */}
-              {/* CONTACT US */}
-              <li
-                className={`nav-item dropdown ${
-                  activeDropdown === "contactus" ? "show" : ""
-                }`}
-                onMouseEnter={() => handleMouseEnter("contactus")}
-                onMouseLeave={handleMouseLeave}
-                style={{ marginLeft: "10px" }}
-              >
-                <a
-                  className="nav-link dropdown-toggle"
-                  href=""
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  style={{ color: "green" }}
-                >
-                  <strong>CONTACT US</strong>
-                </a>
-                <ul
-                  className={`dropdown-menu ${
-                    activeDropdown === "contactus" ? "show" : ""
-                  }`}
-                >
-                  <li>
-                    <a className="dropdown-item" onClick={Ourlocation}>
-                      Our Location
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" onClick={ContactMabslai}>
-                      Contact Mabslai
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              {/* CONTACT US */}
+              {/* END DEPOSIT */}
               {/* ABOUTUS */}
               <li
                 className={`nav-item dropdown ${
@@ -211,18 +247,104 @@ function Home() {
                   }`}
                 >
                   <li>
-                    <a className="dropdown-item" href="" onClick={AboutUs}>
+                    <a
+                      className="dropdown-item"
+                      href=""
+                      onClick={AboutUs}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
                       Board of Trustees
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" onClick={ManagementTeam}>
+                    <a
+                      className="dropdown-item"
+                      onClick={ManagementTeam}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
                       Management Team
                     </a>
                   </li>
                 </ul>
               </li>
               {/* ABOUTUS */}
+              {/* CONTACT US */}
+              <li
+                className={`nav-item dropdown ${
+                  activeDropdown === "contactus" ? "show" : ""
+                }`}
+                onMouseEnter={() => handleMouseEnter("contactus")}
+                onMouseLeave={handleMouseLeave}
+                style={{ marginLeft: "10px" }}
+              >
+                <a
+                  className="nav-link dropdown-toggle"
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style={{ color: "green" }}
+                >
+                  <strong>CONTACT US</strong>
+                </a>
+                <ul
+                  className={`dropdown-menu ${
+                    activeDropdown === "contactus" ? "show" : ""
+                  }`}
+                >
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      onClick={Ourlocation}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
+                      Our Location
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      onClick={ContactMabslai}
+                      style={{ backgroundColor: "transparent", color: "black" }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = "#06923E";
+                        e.currentTarget.style.color = "white";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.style.color = "black";
+                      }}
+                    >
+                      Contact Mabslai
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              {/* END CONTACT US */}
             </ul>
           </div>
           {/* SOCIAL MEDIA */}
@@ -236,7 +358,7 @@ function Home() {
           {/* SOCIAL MEDIA */}
         </div>
       </nav>
-      {/* Carousel section */}
+      {/* CAROUSEL SECTION */}
       <div
         id="mabslaiCarousel"
         className="carousel slide"
@@ -248,7 +370,7 @@ function Home() {
             <button
               key={index}
               type="button"
-              data-bs-target="#Mabslai__Carousel__Banner"
+              data-bs-target="#mabslaiCarousel"
               data-bs-slide-to={index}
               className={index === 0 ? "active" : ""}
               aria-current={index === 0 ? "true" : undefined}
@@ -282,11 +404,10 @@ function Home() {
             </div>
           ))}
         </div>
-
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#Mabslai__Carousel__Banner"
+          data-bs-target="#mabslaiCarousel"
           data-bs-slide="prev"
         >
           <span
@@ -298,7 +419,7 @@ function Home() {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#Mabslai__Carousel__Banner"
+          data-bs-target="#mabslaiCarousel"
           data-bs-slide="next"
         >
           <span
@@ -308,34 +429,34 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      {/* end Carousel section */}
-
-      {/* Latest news */}
-
+      {/* END CAROUSEL SECTION */}
+      {/* LATEST NEWS */}
       <div className="col-md-12 p-4 bordered shadow-lg">
         <h3 className="text-center border rounded shadow-lg">
           Latest Mabslai News
         </h3>
         <h1 className={styles["list-item"]}></h1>
       </div>
-      {/* end Latest news */}
-
-      {/* Became a Member */}
-      <div className="rounded-5  mb-1 mt-1 ms-1 me-1 bg-light">
+      {/* END LATEST NEWS */}
+      {/* BECAME A MEMBER */}
+      <div className="rounded-5  mb-1 mt-5 ms-1 me-1 bg-light">
         <div
           id="becameAMember"
           className="d-flex justify-content-evenly border shadow  rounded mb-1 mt-1 "
+          style={{ marginTop: "20px" }}
         >
           {" "}
-          {/* pagination */}
-          <div className="card mb-5 mt-1" style={{ width: "25rem" }} id="bam">
+          <div className="card mb-5 mt-5" style={{ width: "30rem" }} id="bam">
             <img
               src="/src/images/content/BecameAMabslaiMembers.jpg"
               className="card-img-top"
               alt="capitalContribution"
             />
           </div>
-          <div className=" w-20 h-55 mb-5 mt-1" style={{ marginLeft: "20px" }}>
+          <div
+            className=" w-20 h-55 mb-5 mt-5 pt-4"
+            style={{ marginLeft: "20px" }}
+          >
             <div className="card-body me-5" id="becameAMemberContent">
               <h5 className="card-title fs-5">Became a Mabslai Member</h5>
               <p className="card-text fs-4">
@@ -346,7 +467,11 @@ function Home() {
                   <br />
                 </i>
               </p>
-              <a href="#" className="btn btn-success fs-6">
+              <a
+                href="#"
+                className="btn btn-success fs-6"
+                onClick={() => (window.location.href = "/BecameAMember")}
+              >
                 Read More
               </a>
             </div>
@@ -354,33 +479,38 @@ function Home() {
         </div>
       </div>
       {/* end Became a Member */}
-
       <br />
       <br />
-
       {/* Salary Loan */}
       <div className="rounded-5 mb-1 mt-1 ms-1 me-1">
         <div
           id="salaryLoan"
           className="d-flex justify-content-evenly border shadow  mb-1 mt-1 "
         >
-          <div className=" w-20 h-55 mb-5 mt-1" style={{ marginLeft: "50px" }}>
+          <div
+            className=" w-20 h-55 mb-5 mt-5 pt-5"
+            style={{ marginLeft: "50px" }}
+          >
             <div className="card-body me-5" id="sl-content">
               <h5 className="card-title fs-5">Salary Loan</h5>
               <p className="card-text fs-4">
                 We guarantee flexible term, Fast disburtment of funds, and fixed
                 interest rates.{" "}
                 <i>
+                  <br />
                   Come and Visit Mabslai for more info...
                   <br />
                 </i>
               </p>
-              <a href="salaryLoan.html" className="btn btn-success fs-6">
+              <a
+                className="btn btn-success fs-6"
+                onClick={() => (window.location.href = "/Loan")}
+              >
                 Read More
               </a>
             </div>
           </div>
-          <div className="card mb-5 mt-1" style={{ width: "25rem" }}>
+          <div className="card mb-5 mt-5" style={{ width: "25rem" }}>
             <img
               src="/src/images/content/Loan.png"
               className="card-img-top"
@@ -390,10 +520,8 @@ function Home() {
         </div>
       </div>
       {/* end Salary Loan */}
-
       <br />
       <br />
-
       {/* Capital Contribution */}
       <div className="rounded-5  mb-1 mt-1 ms-1 me-1 bg-light">
         <div
@@ -402,7 +530,7 @@ function Home() {
         >
           <div
             id="ccImage"
-            className="card mb-5 mt-1"
+            className="card mb-5 mt-5"
             style={{ width: "25rem" }}
           >
             <img
@@ -411,7 +539,10 @@ function Home() {
               alt="capitalContribution"
             />
           </div>
-          <div className=" w-20 h-55 mb-5 mt-1" style={{ marginLeft: "20px" }}>
+          <div
+            className=" w-20 h-55 mb-5 mt-5 pt-4"
+            style={{ marginLeft: "20px" }}
+          >
             <div id="ccContent" className="card-body me-5">
               <h5 className="card-title fs-5">
                 Capital Contribution/ Savings Account
@@ -422,10 +553,7 @@ function Home() {
                 <br />
                 <i>Come and Visit Mabslai for more info info...</i>
               </p>
-              <a
-                href="capiltalContributionAccount.html"
-                className="btn btn-success fs-6"
-              >
+              <a className="btn btn-success fs-6" onClick={CapitalContribution}>
                 Read More
               </a>
             </div>
@@ -441,7 +569,7 @@ function Home() {
           id="pensionLoan"
           className="d-flex justify-content-evenly border shadow  mb-1 mt-1 "
         >
-          <div id="plContent" className=" w-20 h-55 mb-5 mt-1">
+          <div id="plContent" className=" w-20 h-55 mb-5 mt-5 pt-4">
             <div className="card-body me-5">
               <h5 className="card-title fs-5">Pension Loan</h5>
               <p className="card-text fs-4">
@@ -449,12 +577,12 @@ function Home() {
                 <br />
                 <i>Come and Visit Mabslai for more info...</i>
               </p>
-              <a href="pensionLoan.html" className="btn btn-success fs-6">
+              <a className="btn btn-success fs-6" onClick={PensionLoan}>
                 Read More
               </a>
             </div>
           </div>
-          <div className="card mb-5 mt-1" style={{ width: "25rem" }}>
+          <div className="card mb-5 mt-5" style={{ width: "25rem" }}>
             <img
               src="/src/images/content/pensionLoan.png"
               className="card-img-top"
@@ -467,16 +595,15 @@ function Home() {
       {/* Loan Calculator */}
       <div
         className="d-flex justify-content-center"
-        style={{ marginTop: "2em" }}
+        style={{ marginTop: "3em", paddingBottom: "3em" }}
       >
-        <a href="#">
-          <img
-            src="/src/images/calculator/calculator.png"
-            style={{ width: "400px" }}
-            className={styles.loanCalculator}
-            alt=""
-          />
-        </a>
+        <img
+          src="/src/images/calculator/calculator.png"
+          style={{ width: "400px" }}
+          className={styles.loanCalculator}
+          alt="LoanCalculator"
+          onClick={() => (window.location.href = "/LoanCalculator")}
+        />
       </div>
       {/* end Loan Calculator */}
       {/* Footer */}
@@ -631,6 +758,7 @@ function Home() {
                 </p>
               </div>
               {/* End About US */}
+
               {/* CONTACTS */}
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
                 <h6 className="text-uppercase fw-bold mb-4">
@@ -679,6 +807,28 @@ function Home() {
         </a>
       </div>
       {/* end Copyright */}
+      {/* ScrollToTopButton */}
+      <button
+        id="myBtn"
+        onClick={scrollToTop}
+        style={{
+          display: isVisible ? "block" : "none",
+          position: "fixed",
+          bottom: "40px",
+          right: "40px",
+          zIndex: 1000,
+          padding: "10px 15px",
+          fontSize: "16px",
+          borderRadius: "5px",
+          border: "none",
+          backgroundColor: "#333",
+          color: "#fff",
+          cursor: "pointer",
+        }}
+      >
+        ↑ Top
+      </button>
+      {/* ScrollToTopButton */}
     </>
   );
 }
