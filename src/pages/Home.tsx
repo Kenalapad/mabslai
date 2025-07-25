@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
+import styles from "./Home.module.css";
 import mabslai from "../images/mabslai.png";
 import fbLogo from "../images/fb-logo.jpg";
 import viber from "../images/carousel//viber.jpg";
@@ -529,11 +529,7 @@ function Home() {
             </div>
           </div>
           <div className="card mb-5 mt-5" style={{ width: "25rem" }}>
-            <img
-              src={Loan}
-              className="card-img-top"
-              alt="capitalContribution"
-            />
+            <img src={Loan} className="card-img-top" alt="salaryLoan" />
           </div>
         </div>
       </div>
