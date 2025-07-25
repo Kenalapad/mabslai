@@ -11,6 +11,7 @@ import capitalContribution from "../images/carousel/capitalContribution.jpg";
 import instagram from "../images/carousel/intagram.jpg";
 import BecameAMabslaiMember from "../images/content/BecameAMabslaiMembers.jpg";
 import Loan from "../images/content/Loan.png";
+import capitalContri from "../images/content/capitalContribution.jpg";
 import pensionLoan from "../images/content/pensionLoan.png";
 import calculator from "../images/calculator/calculator.png";
 
@@ -550,7 +551,7 @@ function Home() {
             style={{ width: "25rem" }}
           >
             <img
-              src={capitalContribution}
+              src={capitalContri}
               className="card-img-top"
               alt="capitalContribution"
             />
