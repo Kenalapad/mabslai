@@ -83,12 +83,6 @@ function Home() {
     navigate("/ManagementTeam");
   };
 
-  // Loan
-  const Loan = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    navigate("/Loan");
-  };
-
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
