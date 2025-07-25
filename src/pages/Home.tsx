@@ -12,6 +12,7 @@ import instagram from "../images/carousel/intagram.jpg";
 import BecameAMabslaiMember from "../images/content/BecameAMabslaiMembers.jpg";
 import Loan from "../images/content/Loan.png";
 import pensionLoan from "../images/content/pensionLoan.png";
+import calculator from "../images/calculator/calculator.png";
 
 function Home() {
   // Carousel
@@ -609,7 +610,7 @@ function Home() {
         style={{ marginTop: "3em", paddingBottom: "3em" }}
       >
         <img
-          src="/src/images/calculator/calculator.png"
+          src={calculator}
           style={{ width: "400px" }}
           className={styles.loanCalculator}
           alt="LoanCalculator"
