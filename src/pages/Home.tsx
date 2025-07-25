@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
+import mabslai from "../images/mabslai.png";
+import fbLogo from "../images/fb-logo.jpg";
 
 function Home() {
   // Carousel
@@ -87,11 +89,7 @@ function Home() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
-          <img
-            src="/src/images/mabslai.png"
-            style={{ width: "80px" }}
-            alt="mabslaiLogo"
-          />
+          <img src={mabslai} style={{ width: "80px" }} alt="mabslaiLogo" />
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               {/* HOME */}
@@ -345,7 +343,7 @@ function Home() {
           <div className="d-flex justify-content-end">
             <div className="row">
               <a className="me-4 text-rest " href="#">
-                <img src="/src/images/logo/fb-logo.jpg" alt="" />
+                <img src={fbLogo} alt="" />
               </a>
             </div>
           </div>
