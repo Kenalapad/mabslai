@@ -3,6 +3,12 @@ import styles from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 import mabslai from "../images/mabslai.png";
 import fbLogo from "../images/fb-logo.jpg";
+import viber from "../images/carousel//viber.jpg";
+import facebook from "../images/carousel/facebook.jpg";
+import signal from "../images/carousel/signal.jpg";
+import loan from "../images/carousel/loan.jpg";
+import capitalContribution from "../images/carousel/capitalContribution.jpg";
+import instagram from "../images/carousel/intagram.jpg";
 
 function Home() {
   // Carousel
@@ -137,7 +143,10 @@ function Home() {
                     <a
                       className="dropdown-item"
                       onClick={SalaryLoan}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -154,7 +163,10 @@ function Home() {
                     <a
                       className="dropdown-item"
                       onClick={PensionLoan}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -198,7 +210,10 @@ function Home() {
                     <a
                       className="dropdown-item"
                       onClick={CapitalContribution}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -243,7 +258,10 @@ function Home() {
                       className="dropdown-item"
                       href=""
                       onClick={AboutUs}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -260,7 +278,10 @@ function Home() {
                     <a
                       className="dropdown-item"
                       onClick={ManagementTeam}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -304,7 +325,10 @@ function Home() {
                     <a
                       className="dropdown-item"
                       onClick={Ourlocation}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -321,7 +345,10 @@ function Home() {
                     <a
                       className="dropdown-item"
                       onClick={ContactMabslai}
-                      style={{ backgroundColor: "transparent", color: "black" }}
+                      style={{
+                        backgroundColor: "transparent",
+                        color: "black",
+                      }}
                       onMouseEnter={(e) => {
                         e.currentTarget.style.backgroundColor = "#06923E";
                         e.currentTarget.style.color = "white";
@@ -343,7 +370,7 @@ function Home() {
           <div className="d-flex justify-content-end">
             <div className="row">
               <a className="me-4 text-rest " href="#">
-                <img src={fbLogo} alt="" />
+                <img src={fbLogo} alt="fbLogo" />
               </a>
             </div>
           </div>
@@ -373,15 +400,12 @@ function Home() {
 
         <div className="carousel-inner">
           {[
-            { src: "/src/images/carousel/viber.jpg", alt: "viber" },
-            { src: "/src/images/carousel/facebook.jpg", alt: "facebook" },
-            { src: "/src/images/carousel/signal.jpg", alt: "signal" },
-            { src: "/src/images/carousel/loan.jpg", alt: "loan" },
-            {
-              src: "/src/images/carousel/capitalContribution.jpg",
-              alt: "capital contribution",
-            },
-            { src: "/src/images/carousel/intagram.jpg", alt: "instagram" },
+            { src: viber, alt: "viber" },
+            { src: facebook, alt: "facebook" },
+            { src: signal, alt: "signal" },
+            { src: loan, alt: "loan" },
+            { src: capitalContribution, alt: "capital contribution" },
+            { src: instagram, alt: "instagram" },
           ].map((img, idx) => (
             <div
               className={`carousel-item ${idx === 0 ? "active" : ""}`}
