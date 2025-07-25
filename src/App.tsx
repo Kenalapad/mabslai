@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { HashRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
@@ -18,7 +19,7 @@ function App() {
   return (
     <div>
       {/* <Home /> */}
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/Home" element={<Home />} />
@@ -34,7 +35,7 @@ function App() {
           <Route path="Loan" element={<Loan />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
