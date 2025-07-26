@@ -352,7 +352,7 @@ function PensionLoan() {
           <div className="d-flex justify-content-end">
             <div className="row">
               <a className="me-4 text-rest " href="#">
-                <img src="/src/images/logo/fb-logo.jpg" alt="" />
+                <img src={fbLogo} alt="" />
               </a>
             </div>
           </div>
