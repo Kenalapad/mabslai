@@ -377,11 +377,7 @@ function CapitalContribution() {
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/facebook.svg"
-                alt="facebook"
-                style={{ width: "34px" }}
-              />
+              <img src={facebookSvg} alt="facebook" style={{ width: "34px" }} />
             </a>
             <a
               href="https://www.instagram.com/mabslai/"
@@ -389,7 +385,7 @@ function CapitalContribution() {
               style={{ textDecoration: "none" }}
             >
               <img
-                src="/src/images/logo/instagram.svg"
+                src={instagramSvg}
                 alt="instagram"
                 style={{ width: "34px" }}
               />
@@ -399,22 +395,14 @@ function CapitalContribution() {
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/whatsapp.svg"
-                alt="whatsapp"
-                style={{ width: "34px" }}
-              />
+              <img src={whatsappSvg} alt="whatsapp" style={{ width: "34px" }} />
             </a>
             <a
               href="#"
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/youtube.svg"
-                alt="youtube"
-                style={{ width: "34px" }}
-              />
+              <img src={youtubeSvg} alt="youtube" style={{ width: "34px" }} />
             </a>
           </div>
         </section>
@@ -425,7 +413,7 @@ function CapitalContribution() {
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <img
-                    src="/src/images/mabslai.png"
+                    src={mabslaiLogo}
                     style={{
                       width: "34px",
                       height: "34px",
@@ -521,27 +509,15 @@ function CapitalContribution() {
                   <strong>CONTACT US</strong>
                 </h6>
                 <p>
-                  <img
-                    src="/src/images/logo/gmail.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={email} style={{ width: "34px" }} alt="" />
                   &nbsp; mabslai@yahoo.com
                 </p>
                 <p>
-                  <img
-                    src="/src/images/logo/phone.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={phone} style={{ width: "34px" }} alt="" />
                   &nbsp; 0916 519 1592
                 </p>
                 <p>
-                  <img
-                    src="/src/images/logo/dialphone.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={dialphone} style={{ width: "34px" }} alt="" />
                   &nbsp; 340 3052
                 </p>
               </div>
