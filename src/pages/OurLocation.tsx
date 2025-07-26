@@ -365,7 +365,7 @@ function OurLocation() {
       </nav>
       {/* End NAVBAR SECTION */}
       {/* Footer */}
-      <footer className="text-center text-lg-start bg-body-tertiary text-muted">
+      <footer className="text-center text-lg-start bg-body-tertiary text-muted mt-5">
         <section className="d-flex justify-content-center justify-content-lg-between p-2 border-bottom --bs-success-bg-subtle">
           <div className="me-5 d-none d-lg-block mt-2">
             <span>
