@@ -624,9 +624,8 @@ function Home() {
           style={{ width: "400px" }}
           className={styles.loanCalculator}
           alt="LoanCalculator"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate("/LoanCalculator");
+          onClick={() => {
+            window.location.href = "/LoanCalculator";
           }}
         />
       </div>
