@@ -496,7 +496,11 @@ function Home() {
               <a
                 href="#"
                 className="btn btn-success fs-6"
-                onClick={() => (window.location.href = "/BecameAMember")}
+                // onClick={() => (window.location.href = "/BecameAMember")}
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate("/BecameAMember");
+                }}
               >
                 Read More
               </a>
