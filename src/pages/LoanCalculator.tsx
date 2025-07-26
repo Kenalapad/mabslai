@@ -1,5 +1,15 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import mabslai from "../images/mabslai.png";
+import fbLogo from "../images/fb-logo.jpg";
+import facebookSvg from "../images/logo/facebook.svg";
+import instagramSvg from "../images/logo/instagram.svg";
+import whatsappSvg from "../images/logo/whatsapp.svg";
+import youtubeSvg from "../images/logo/youtube-logo.jpg";
+import mabslaiLogo from "../images/mabslai.png";
+import email from "../images/logo/gmail.png";
+import phone from "../images/logo/phone.png";
+import dialphone from "../images/logo/dialphone.png";
 
 function LoanCalculator() {
   // Loan Calculator
@@ -102,7 +112,7 @@ function LoanCalculator() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
           <img
-            src="/src/images/mabslai.png"
+            src={mabslai}
             style={{ width: "80px" }}
             alt="mabslaiLogo"
             onClick={() => navigate("/Home")}
@@ -360,7 +370,7 @@ function LoanCalculator() {
           <div className="d-flex justify-content-end">
             <div className="row">
               <a className="me-4 text-rest " href="#">
-                <img src="/src/images/logo/fb-logo.jpg" alt="" />
+                <img src={fbLogo} alt="" />
               </a>
             </div>
           </div>
@@ -454,11 +464,7 @@ function LoanCalculator() {
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/facebook.svg"
-                alt="facebook"
-                style={{ width: "34px" }}
-              />
+              <img src={facebookSvg} alt="facebook" style={{ width: "34px" }} />
             </a>
             <a
               href="https://www.instagram.com/mabslai/"
@@ -466,7 +472,7 @@ function LoanCalculator() {
               style={{ textDecoration: "none" }}
             >
               <img
-                src="/src/images/logo/instagram.svg"
+                src={instagramSvg}
                 alt="instagram"
                 style={{ width: "34px" }}
               />
@@ -476,22 +482,14 @@ function LoanCalculator() {
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/whatsapp.svg"
-                alt="whatsapp"
-                style={{ width: "34px" }}
-              />
+              <img src={whatsappSvg} alt="whatsapp" style={{ width: "34px" }} />
             </a>
             <a
               href="#"
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/youtube.svg"
-                alt="youtube"
-                style={{ width: "34px" }}
-              />
+              <img src={youtubeSvg} alt="youtube" style={{ width: "34px" }} />
             </a>
           </div>
         </section>
@@ -502,7 +500,7 @@ function LoanCalculator() {
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <img
-                    src="/src/images/mabslai.png"
+                    src={mabslaiLogo}
                     style={{
                       width: "34px",
                       height: "34px",
@@ -598,27 +596,15 @@ function LoanCalculator() {
                   <strong>CONTACT US</strong>
                 </h6>
                 <p>
-                  <img
-                    src="/src/images/logo/gmail.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={email} style={{ width: "34px" }} alt="" />
                   &nbsp; mabslai@yahoo.com
                 </p>
                 <p>
-                  <img
-                    src="/src/images/logo/phone.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={phone} style={{ width: "34px" }} alt="" />
                   &nbsp; 0916 519 1592
                 </p>
                 <p>
-                  <img
-                    src="/src/images/logo/dialphone.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={dialphone} style={{ width: "34px" }} alt="" />
                   &nbsp; 340 3052
                 </p>
               </div>
