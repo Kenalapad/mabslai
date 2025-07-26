@@ -355,7 +355,7 @@ function ManagementTeam() {
           <div className="d-flex justify-content-end">
             <div className="row">
               <a className="me-4 text-rest " href="#">
-                <img src={facebookSvg} alt="" />
+                <img src={fbLogo} alt="" />
               </a>
             </div>
           </div>
