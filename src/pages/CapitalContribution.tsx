@@ -1,5 +1,15 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import mabslai from "../images/mabslai.png";
+import fbLogo from "../images/fb-logo.jpg";
+import facebookSvg from "../images/logo/facebook.svg";
+import instagramSvg from "../images/logo/instagram.svg";
+import whatsappSvg from "../images/logo/whatsapp.svg";
+import youtubeSvg from "../images/logo/youtube-logo.jpg";
+import mabslaiLogo from "../images/mabslai.png";
+import email from "../images/logo/gmail.png";
+import phone from "../images/logo/phone.png";
+import dialphone from "../images/logo/dialphone.png";
 
 function CapitalContribution() {
   // NavBar
@@ -87,7 +97,7 @@ function CapitalContribution() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
           <img
-            src="/src/images/mabslai.png"
+            src={mabslai}
             style={{ width: "80px" }}
             alt="mabslaiLogo"
             onClick={() => navigate("/Home")}
@@ -345,7 +355,7 @@ function CapitalContribution() {
           <div className="d-flex justify-content-end">
             <div className="row">
               <a className="me-4 text-rest " href="#">
-                <img src="/src/images/logo/fb-logo.jpg" alt="" />
+                <img src={fbLogo} alt="" />
               </a>
             </div>
           </div>
