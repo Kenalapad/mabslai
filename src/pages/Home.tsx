@@ -14,6 +14,10 @@ import Loan from "../images/content/Loan.png";
 import capitalContri from "../images/content/capitalContribution.jpg";
 import pensionLoan from "../images/content/pensionLoan.png";
 import calculator from "../images/calculator/calculator.png";
+import facebookSvg from "../images/logo/facebook.svg";
+import instagramSvg from "../images/logo/instagram.svg";
+import whatsappSvg from "../images/logo/whatsapp.svg";
+import youtubeSvg from "../images/logo/youtube-logo.jpg";
 
 function Home() {
   // Carousel
@@ -633,11 +637,7 @@ function Home() {
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/facebook.svg"
-                alt="facebook"
-                style={{ width: "34px" }}
-              />
+              <img src={facebookSvg} alt="facebook" style={{ width: "34px" }} />
             </a>
             <a
               href="https://www.instagram.com/mabslai/"
@@ -645,7 +645,7 @@ function Home() {
               style={{ textDecoration: "none" }}
             >
               <img
-                src="/src/images/logo/instagram.svg"
+                src={instagramSvg}
                 alt="instagram"
                 style={{ width: "34px" }}
               />
@@ -655,22 +655,14 @@ function Home() {
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/whatsapp.svg"
-                alt="whatsapp"
-                style={{ width: "34px" }}
-              />
+              <img src={whatsappSvg} alt="whatsapp" style={{ width: "34px" }} />
             </a>
             <a
               href="#"
               className="me-4 text-reset"
               style={{ textDecoration: "none" }}
             >
-              <img
-                src="/src/images/logo/youtube.svg"
-                alt="youtube"
-                style={{ width: "34px" }}
-              />
+              <img src={youtubeSvg} alt="youtube" style={{ width: "34px" }} />
             </a>
           </div>
         </section>
