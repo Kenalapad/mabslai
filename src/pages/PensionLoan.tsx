@@ -7,6 +7,7 @@ import instagramSvg from "../images/logo/instagram.svg";
 import whatsappSvg from "../images/logo/whatsapp.svg";
 import youtubeSvg from "../images/logo/youtube-logo.jpg";
 import mabslaiLogo from "../images/mabslai.png";
+import email from "../images/logo/gmail.png";
 import phone from "../images/logo/phone.png";
 import dialphone from "../images/logo/dialphone.png";
 
@@ -508,7 +509,7 @@ function PensionLoan() {
                   <strong>CONTACT US</strong>
                 </h6>
                 <p>
-                  <img src={mabslaiLogo} style={{ width: "34px" }} alt="" />
+                  <img src={email} style={{ width: "34px" }} alt="" />
                   &nbsp; mabslai@yahoo.com
                 </p>
                 <p>
