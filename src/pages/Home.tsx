@@ -18,6 +18,7 @@ import facebookSvg from "../images/logo/facebook.svg";
 import instagramSvg from "../images/logo/instagram.svg";
 import whatsappSvg from "../images/logo/whatsapp.svg";
 import youtubeSvg from "../images/logo/youtube-logo.jpg";
+import mabslaiLogo from "../images/mabslai.png";
 
 function Home() {
   // Carousel
@@ -673,7 +674,7 @@ function Home() {
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
                 <h6 className="text-uppercase fw-bold mb-4">
                   <img
-                    src="/src/images/mabslai.png"
+                    src={mabslaiLogo}
                     style={{
                       width: "34px",
                       height: "34px",
