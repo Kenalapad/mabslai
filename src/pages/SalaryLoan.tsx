@@ -7,6 +7,9 @@ import instagramSvg from "../images/logo/instagram.svg";
 import whatsappSvg from "../images/logo/whatsapp.svg";
 import youtubeSvg from "../images/logo/youtube-logo.jpg";
 import mabslaiLogo from "../images/mabslai.png";
+import email from "../images/logo/gmail.png";
+import phone from "../images/logo/phone.png";
+import dialphone from "../images/logo/dialphone.png";
 
 function SalaryLoan() {
   // NavBar
@@ -526,27 +529,15 @@ function SalaryLoan() {
                   <strong>CONTACT US</strong>
                 </h6>
                 <p>
-                  <img
-                    src="/src/images/logo/gmail.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={email} style={{ width: "34px" }} alt="" />
                   &nbsp; mabslai@yahoo.com
                 </p>
                 <p>
-                  <img
-                    src="/src/images/logo/phone.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={phone} style={{ width: "34px" }} alt="" />
                   &nbsp; 0916 519 1592
                 </p>
                 <p>
-                  <img
-                    src="/src/images/logo/dialphone.png"
-                    style={{ width: "34px" }}
-                    alt=""
-                  />
+                  <img src={dialphone} style={{ width: "34px" }} alt="" />
                   &nbsp; 340 3052
                 </p>
               </div>
