@@ -388,7 +388,7 @@ function LoanCalculator() {
           className="container border border-success"
           style={{
             maxWidth: "300px",
-            marginLeft: "25em",
+            marginLeft: "20em",
             padding: "20px",
             border: "1px solid #ccc",
             borderRadius: "10px",
@@ -433,7 +433,7 @@ function LoanCalculator() {
           </p>
         </div>
 
-        <div style={{ marginRight: "25em" }} id="calculatorINS">
+        <div style={{ marginRight: "15em" }} id="calculatorINS">
           <strong>INSTRUCTIONS:</strong>
           <p style={{ padding: "14px 16px" }}>
             Calculate your monthly amortization:
